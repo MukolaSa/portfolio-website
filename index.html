@@ -267,7 +267,7 @@
                                 <span class="prt-icon zoom-icon" style="--i: 0s">
                                     <i class="uil uil-search-plus"></i>
                                 </span>
-                                <a href="" class="prt-icon" style="--i: .15s">
+                                <a href="" class="prt-icon zoom-icon" style="--i: .15s">
                                     <i class="uil uil-link-h"></i>
                                 </a>
                             </div>
@@ -488,7 +488,7 @@
         </div>
     </footer>
 
-    <!-- Theam Cahge -->
+    <!-- Theam Change -->
 
     <script>
         const toggle_btn = document.querySelector('.toggle-btn');
@@ -511,6 +511,30 @@
         toggle_btn.addEventListener("click", () => {
             changeTheme(!document.body.classList.contains("dark"));
         });
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+        const zoomIcons = document.querySelectorAll('.zoom-icon');
+        const modal = document.querySelector('.modal');
+        const images = modal.querySelector('.images');
+        const imageElems = images.querySelectorAll('img');
+        let currentIndex = 0;
+
+        zoomIcons.forEach(icon => {
+            icon.addEventListener('click', () => {
+                if (icon.dataset.action === 'next') {
+                    currentIndex = (currentIndex + 1) % imageElems.length;
+                } else if (icon.dataset.action === 'prev') {
+                    currentIndex = (currentIndex - 1 + imageElems.length) % imageElems.length;
+                }
+                updateModalImage();
+            });
+        });
+
+        function updateModalImage() {
+            images.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+    });
     </script>
 
     <script src="https://unpkg.com/scrollreveal" type="module"></script>

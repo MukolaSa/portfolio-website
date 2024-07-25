@@ -247,6 +247,7 @@ header.scrolled .logo {
 
 }
 
+
 .hamburger .bar:first-child {
     top: 1rem;
     transition: top 0.2s .15s, transform 0.3s;
@@ -283,6 +284,7 @@ body.open .hamburger .bar:last-child {
      font-weight: 500;
      transition: 0.3s color;
 }
+
 
 .heading {
     color: var(--heading-color);
@@ -1409,6 +1411,11 @@ footer .social-media {
 /* --------------------- 768px екрани ---------------------*/
 
 @media (max-width: 768px) {
+    .hamburger .bar {
+        display: block;
+    
+    }
+
     :root {
         --section-padding: 4.5rem;
     }
@@ -1430,9 +1437,7 @@ footer .social-media {
     }
 
     .services img {
-        display: none;
-        /* чекнути відос */
-    }
+        display: none;    }
 
 
     .links {
@@ -1778,11 +1783,18 @@ footer .social-media {
         opacity: 0.8;
         bottom: -15%;
     } */
+
 }
 
 /* --------------------- 500px екрани ---------------------*/
 
 @media (max-width: 500px) {
+    .hamburger {
+        margin-right: 140px;
+    }
+
+
+
     .container {
         padding: 0 1rem;
     }
@@ -1802,12 +1814,20 @@ footer .social-media {
     .skills-box {
         padding: 3rem 2.5rem;
     }
-
+/* 
     .skills-wrap {
         grid-template-columns: 1fr;
         row-gap: 1.5rem;
-    }
+    } */
 
+
+    .skills-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1.5rem;
+    }
     .services-grid {
         grid-template-columns: 1fr;
         row-gap: 20px;
@@ -1900,4 +1920,5 @@ footer .social-media {
         text-align: center;
         margin-top: 1rem;
     }
+
 }

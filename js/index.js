@@ -7,9 +7,9 @@ const progressBars = document.querySelectorAll('.skills svg circle')
 const mlSection = document.querySelector('.milestones')
 const mlCounters = document.querySelectorAll('.number span')
 
-const prtSection = document.querySelector('.portfolio')
-const zoomIcons = document.querySelectorAll('.zoom-icon')
-const modalOverlay = document.querySelector('.modal-overlay')
+const prt_section = document.querySelector('.portfolio')
+const zoom_icons = document.querySelectorAll('.zoom-icon')
+const modal_overlay = document.querySelector('.modal-overlay')
 const images = document.querySelectorAll('.images img')
 const prevBtn = document.querySelector('.prev-btn')
 const nextBtn = document.querySelector('.next-btn') 
@@ -127,17 +127,18 @@ let mixer = mixitup(".portfolio-gallery", {
     }
 })
 // -------------------------------------------------------------------------------------------------------
-let currentIndex = 0
+let currentIndex = 0;
 
-zoomIcons.forEach((icn, i) => icn.addEventListener("click", ()=>{
-    prtSection.classList.add("open")
+zoom_icons.forEach((icn, i) => 
+    icn.addEventListener("click", () => {
+    prt_section.classList.add("open")
     document.body.classList.add("stopScrolling")
-     currentIndex = i
+     currentIndex = i;
      changeImage(currentIndex)
 }))
 
-modalOverlay.addEventListener("click", () => {
-    prtSection.classList.remove("open")
+modal_overlay.addEventListener("click", () => {
+    prt_section.classList.remove("open")
     document.body.classList.remove("stopScrolling")
 })
 
