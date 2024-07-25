@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <nav class="container">
+            <a href="" class="logo">Portf<span>olio</span></a>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <i class="uil uil-moon toggle-btn"></i>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="showcase-area" id="home">
+            <img class="shape square" src="./files/square.png" alt="">
+            <div class="container">
+                <div class="showcase-info">
+                <h3 class="sub-heading">Front end developer</h3>
+                <h1 class="heading">Mykola Salamakha</h1>
+                <p class="text">I am a freelance frontend developer. Let's work together.</p>
+                <div class="cta">
+                    <a href="mailto:koliunia2006@gmail.com" class="btn">Contact me</a>
+                    <a href="./files/cv.pdf" class="btn secondary-btn">Download CV</a>
+                </div>
+                <!-- For download <a href="./files/Black Simple Modern Graphic Designer CV Resume.pdf" download class="btn secondary-btn">Download CV</a> -->
+                </div>
+                <div class="showcase-image">
+                    <img class="person" src="./files/person1.png" alt="">
+                    <img class="shape circle" src="./files/circle1.png" alt="">
+                    <img class="shape dots" src="./files/dots.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <img src="./files/triangle.png" alt="" class="shape triangle">
+            <div class="container">
+                <div class ="about-grid">
+                    <div class="about-card">
+                        <img class="icon" src="./files/user.png" alt="">
+                        <h3>User research</h3>
+                    </div>
+                    <div class="about-card">
+                        <img class="icon" src="./files/design.png" alt="">
+                        <h3>Visual Design</h3>
+                    </div>
+                    <div class="about-card">
+                        <img class="icon" src="./files/testing.png" alt="">
+                        <h3>User Testing</h3>
+                    </div>
+                    <div class="about-card">
+                        <img class="icon" src="./files/protoryp.png" alt="">
+                        <h3>Prototyping</h3>
+                    </div>
+                </div>
+                <div class="about-info">
+                    <h3 class="sub-heading">About me</h3>
+                <h1 class="heading">Better site, <br>better experiences</h1>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque eaque, voluptates, fugiat eum repudiandae pariatur maxime sapiente laudantium neque at minus a alias atque esse ex! Dolores ipsum ex sint molestias enim inventore aspernatur.</p>
+                <div class="cta">
+                    <a href="mailto:koliunia2006@gmail.com" class="btn">Contact me</a>
+                    <a href="./files/cv.pdf" class="btn secondary-btn">Download CV</a>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Skills section -->
+        <section class="skills section">
+            <div class="container">
+                <div class="skills-box">
+                    <div class="box-heading">
+                        <h3 class="sub-heading">My skills</h3>
+                        <h1 class="heading">Let me help you</h1>
+                        <div class="box-desc">
+                            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut corrupti obcaecati architecto ipsum. Molestiae praesentium pariatur deserunt quis dolorem! Dignissimos inventore mollitia voluptas sint provident eveniet iste, ab molestiae placeat?</p>
+                            <a href="#" class="btn">Hire me</a>
+                        </div>
+                    </div>
+                    <div class="skills-wrap">
+                        <div class="skill">
+                            <div class="sk-progress">
+                                <svg>
+                                    <circle cx="75" cy="75" r="68"></circle>
+                                </svg>
+                                <h2 class="counter">
+                                    <span data-target="89">0</span>%
+                                </h2>
+                            </div>
+                            <div class="sk-title">HTML</div>
+                        </div>
+                        <div class="skill">
+                            <div class="sk-progress">
+                                <svg>
+                                    <circle cx="75" cy="75" r="68"></circle>
+                                </svg>
+                                <h2 class="counter">
+                                    <span data-target="68">0</span>%
+                                </h2>
+                            </div>
+                            <div class="sk-title">CSS</div>
+                        </div>
+                        <div class="skill">
+                            <div class="sk-progress">
+                                <svg>
+                                    <circle cx="75" cy="75" r="68"></circle>
+                                </svg>
+                                <h2 class="counter">
+                                    <span data-target="82">0</span>%
+                                </h2>
+                            </div>
+                            <div class="sk-title">Java Script</div>
+                        </div>
+                        <div class="skill">
+                            <div class="sk-progress">
+                                <svg>
+                                    <circle cx="75" cy="75" r="68"></circle>
+                                </svg>
+                                <h2 class="counter">
+                                    <span data-target="55">0</span>%
+                                </h2>
+                            </div>
+                            <div class="sk-title">React JS</div>
+                        </div>
+                    </div>
+                    <img src="./files/dots.png" alt="" class="shape dots">
+                    <img src="./files/square.png" alt="" class="shape square">
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Services section -->
+        <section class="services section" id="services">
+            <img src="./files/triangle.png" alt="shape triangle">
+            <div class="container">
+                <div class="services-info">
+                    <h3 class="sub-heading">My services</h3>
+                    <h1 class="heading">Things I may for my clients</h1>
+                    <p class="text">From offering in-depth user research, to helping with design and testing, I can help bring your product to life</p>
+                    <div class="milestones">
+                        <div class="ml">
+                            <h2 class="number"><span data-target="11">0</span>+</h2>
+                            <h5>Years</h5>
+                        </div>
+                        <div class="ml">
+                            <h2 class="number"><span data-target="79">0</span>+</h2>
+                            <h5>Projects</h5>
+                        </div>
+                        <div class="ml">
+                            <h2 class="number"><span data-target="95">0</span>+</h2>
+                            <h5>Clients</h5>
+                        </div>
+                    </div>
+                    <div class="cta">
+                        <a href="" class="btn">Hire me</a>
+                        <a href="./files/cv.pdf" class="btn secondary-btn">Download CV</a>
+                    </div>
+                </div>
+                <div class="services-grid">
+                    <div class="srv-card">
+                        <div class="card-desc">
+                            <h3>Brand Identity</h3>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio sit nisi quas facere alias ipsam.</p>
+                        </div>
+                        <a href="" class="btn secondary-btn">Explore More</a>
+                    </div>
+                    <div class="srv-card">
+                        <div class="card-desc">
+                            <h3>Product Design</h3>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio sit nisi quas facere alias ipsam.</p>
+                        </div>
+                        <a href="" class="btn secondary-btn">Explore More</a>
+                    </div>
+                    <div class="srv-card">
+                        <div class="card-desc">
+                            <h3>Integration Design</h3>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio sit nisi quas facere alias ipsam.</p>
+                        </div>
+                        <a href="" class="btn secondary-btn">Explore More</a>
+                    </div>
+                    <div class="srv-card">
+                        <div class="card-desc">
+                            <h3>App Design</h3>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio sit nisi quas facere alias ipsam.</p>
+                        </div>
+                        <a href="" class="btn secondary-btn">Explore More</a>
+                    </div>
+                    <img src="./files/square.png" alt="" class="shape square">
+                </div>
+            </div>
+        </section>
+        
+        <section class="portfolio section" id="portfolio">
+            <div class="modal">
+                <div class="modal-overlay"></div>
+                <div class="slider-wrap">
+                    <div class="prev-btn navigation">
+                        <i class="uil uil-angle-left-b"></i>
+                    </div>
+                    <div class="images">
+                        <img class="showImage" src="./files/port1 (1).jpg">
+                        <img src="./files/port2.png">
+                        <img src="./files/port3.jpg">
+                        <img src="./files/port4.png">
+                        <img src="./files/port5.png">
+                        <img src="./files/port6.jpg">
+                    </div>
+                    <div class="next-btn navigation">
+                        <i class="uil uil-angle-right-b"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="portfolio-header">
+                    <div class="portfolio-title">
+                        <h3 class="sub-heading">Portfolio</h3>
+                        <h1 class="heading">Latest Projects</h1>
+                    </div>
+                    <div class="filter-btns">
+                        <button class="filter-btn" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter=".product">Product</button>
+                        <button class="filter-btn" data-filter=".inter">Interacting</button>
+                        <button class="filter-btn" data-filter=".web">Web App</button>
+                    </div>
+                </div>
+                <div class="portfolio-gallery">
+                    <div class="mix prt-card inter">
+                        <div class="prt-image">
+                            <img src="./files/port1 (1).jpg" alt="">
+                            <div class="prt-overlay">
+                                <span class="prt-icon zoom-icon" style="--i: 0s">
+                                    <i class="uil uil-search-plus"></i>
+                                </span>
+                                <a href="" class="prt-icon" style="--i: .15s">
+                                    <i class="uil uil-link-h"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="prt-desc">
+                            <h3>Olio Interaction</h3>
+                            <a href="" class="btn secondary-btn sm">Read more</a>
+                        </div>
+                    </div>
+                    <div class="mix prt-card product">
+                        <div class="prt-image">
+                            <img src="./files/port2.png" alt="">
+                            <div class="prt-overlay">
+                                <span class="prt-icon" style="--i: 0s">
+                                    <i class="uil uil-search-plus"></i>
+                                </span>
+                                <a href="" class="prt-icon" style="--i: .15s">
+                                    <i class="uil uil-link-h"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="prt-desc">
+                            <h3>john Product Gesign</h3>
+                            <a href="" class="btn secondary-btn sm">Read more</a>
+                        </div>
+                    </div>
+                    <div class="mix prt-card web">
+                        <div class="prt-image">
+                            <img src="./files/port3.jpg" alt="">
+                            <div class="prt-overlay">
+                                <span class="prt-icon" style="--i: 0s">
+                                    <i class="uil uil-search-plus"></i>
+                                </span>
+                                <a href="" class="prt-icon" style="--i: .15s">
+                                    <i class="uil uil-link-h"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="prt-desc">
+                            <h3>Meta Web Design</h3>
+                            <a href="" class="btn secondary-btn sm">Read more</a>
+                        </div>
+                    </div>
+                    <div class="mix prt-card web">
+                        <div class="prt-image">
+                            <img src="./files/port4.png" alt="">
+                            <div class="prt-overlay">
+                                <span class="prt-icon" style="--i: 0s">
+                                    <i class="uil uil-search-plus"></i>
+                                </span>
+                                <a href="" class="prt-icon" style="--i: .15s">
+                                    <i class="uil uil-link-h"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="prt-desc">
+                            <h3>TwitUp Web Design</h3>
+                            <a href="" class="btn secondary-btn sm">Read more</a>
+                        </div>
+                    </div>
+                    <div class="mix prt-card inter">
+                        <div class="prt-image">
+                            <img src="./files/port5.png" alt="">
+                            <div class="prt-overlay">
+                                <span class="prt-icon" style="--i: 0s">
+                                    <i class="uil uil-search-plus"></i>
+                                </span>
+                                <a href="" class="prt-icon" style="--i: .15s">
+                                    <i class="uil uil-link-h"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="prt-desc">
+                            <h3>Markus Interaction</h3>
+                            <a href="" class="btn secondary-btn sm">Read more</a>
+                        </div>
+                    </div>
+                    <div class="mix prt-card web">
+                        <div class="prt-image">
+                            <img src="./files/port6.jpg" alt="">
+                            <div class="prt-overlay">
+                                <span class="prt-icon" style="--i: 0s">
+                                    <i class="uil uil-search-plus"></i>
+                                </span>
+                                <a href="" class="prt-icon" style="--i: .15s">
+                                    <i class="uil uil-link-h"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="prt-desc">
+                            <h3>Demga Web Design</h3>
+                            <a href="" class="btn secondary-btn sm">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <section class="testimonials section">
+                <div class="container">
+                    <div class="section-background">
+                        <img src="./files/person2.png" alt="" class="person">
+                        <img src="./files/circle2.png" alt="" class="circle">
+                        <img src="./files/square.png" alt="" class="square">
+                    </div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="client">
+                                    <img src="./files/testi1.png" alt="">
+                                    <div class="client-info">
+                                        <h4>Kelly Williams</h4>
+                                        <h5>Executive Officer <a href="">@ABEnergy</a></h5>
+                                    </div>
+                                </div>
+                                <q class="text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nam explicabo sed nulla nobis, reiciendis optio minima repudiandae, assumenda rem quia laboriosam placeat magni quas? Nobis dicta optio assumenda dignissimos!
+                                </q>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="client">
+                                    <img src="./files/testi2.png" alt="">
+                                    <div class="client-info">
+                                        <h4>Kelly Williams</h4>
+                                        <h5>Executive Officer <a href="">@ABEnergy</a></h5>
+                                    </div>
+                                </div>
+                                <q class="text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nam explicabo sed nulla nobis, reiciendis optio minima repudiandae, assumenda rem quia laboriosam placeat magni quas? Nobis dicta optio assumenda dignissimos!
+                                </q>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="client">
+                                    <img src="./files/testi3.png" alt="">
+                                    <div class="client-info">
+                                        <h4>Kelly Williams</h4>
+                                        <h5>Executive Officer <a href="">@ABEnergy</a></h5>
+                                    </div>
+                                </div>
+                                <q class="text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nam explicabo sed nulla nobis, reiciendis optio minima repudiandae, assumenda rem quia laboriosam placeat magni quas? Nobis dicta optio assumenda dignissimos!
+                                </q>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination">
+                            
+                        </div>
+                    </div>
+                    <div class="testimonials-title">
+                        <h3 class="sub-heading">Testimonails</h3>
+                        <h1 class="heading">Hear from my happy clients</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact section" id="5">
+                <img src="./files/triangle.png" alt="" class="shape triangle">
+                <div class="container">
+                    <img src="./files/square2.png" alt="" class="shape square">
+                    <div class="contact-info" id="contact">
+                        <h3 class="sub-heading">Contact me</h3>
+                        <h1 class="heading">Let's work together</h1>
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae molestiae consequatur.</p>
+                        <a href="mailto:koliunia2006@gmail.com" class="mail">koliunia2006@gmail.com
+                            <i class="uil uil-arrow-right"></i>
+                        </a>
+                    </div>
+                    <form action="index.html" class="contact-form">
+                        <h3>Send me a message</h3>
+                        <input type="text" class="form-input" placeholder="Your name" required>
+                        <input type="email" class="form-input" placeholder="Your email" required>
+                        <textarea placeholder="Project Details" class="form-input" required></textarea>
+                        <input type="submit" value="Send" class="btn">
+                    </form>
+                </div>
+            </section>
+
+            <section class="subscription section">
+                <div class="container">
+                    <img src="./files/map.png" class="map" alt="">
+                    <div class="sub-box">
+                        <img src="./files/square2.png" alt="" class="shape square">
+                        <div class="sub-info">
+                            <h3 class="sub-heading">Newsletter</h3>
+                            <h1 class="heading">Get news about my projects</h1>
+                            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab eligendi fugit dolor, quia ullam earum quibusdam numquam maiores autem nostrum.</p>
+                        </div>
+                        <form action="index.html">
+                            <input type="email" placeholder="Email" class="form-input" required>
+                            <input type="submit" value="Subscribe" class="btn">
+                        </form>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="#" class="logo">Port<span>olio.</span></a>
+            <p class="text">&copy; Copyright 2022. All rights reserved</p>
+            <ul class="social-media">
+                <li>
+                    <a href="#" class="social-link">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-link">
+                        <i class="uil uil-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-link">
+                        <i class="uil uil-dribbble"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Theam Cahge -->
+
+    <script>
+        const toggle_btn = document.querySelector('.toggle-btn');
+        let firstTheme = localStorage.getItem("dark");
+
+        changeTheme(+firstTheme);
+
+        function changeTheme(isDark) {
+            if (isDark) {
+                document.body.classList.add("dark");
+                toggle_btn.classList.replace("uil-moon", "uil-sun");
+                localStorage.setItem("dark", 1);
+            } else {
+                document.body.classList.remove("dark");
+                toggle_btn.classList.replace("uil-sun", "uil-moon");
+                localStorage.setItem("dark", 0);
+            }
+        }
+
+        toggle_btn.addEventListener("click", () => {
+            changeTheme(!document.body.classList.contains("dark"));
+        });
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" type="module"></script>
+    <script src="./js/mixitup.min.js" type="module"></script>
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>
