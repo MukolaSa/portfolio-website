@@ -83,6 +83,7 @@ body {
     background-color: hsl(257, 100%, 97%);
     font-family: "Poppins", sans-serif;
     transition: .3s background-color;
+    overflow-x: hidden;
 }
 
 /* scroll */
