@@ -17,6 +17,41 @@ const nextBtn = document.querySelector('.next-btn')
 const links = document.querySelectorAll(".nav-link")
 
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const images = document.querySelectorAll('.images img');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.classList.toggle('showImage', i === index);
+        });
+    }
+
+    function updateIndex(increment) {
+        currentIndex = (currentIndex + increment + images.length) % images.length;
+        showImage(currentIndex);
+    }
+
+    // Перевірка наявності кнопок і зображень
+    if (prevBtn && nextBtn && images.length > 0) {
+        prevBtn.addEventListener('click', () => {
+            updateIndex(-1);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            updateIndex(1);
+        });
+
+        // Показати перше зображення при відкритті модалки
+        showImage(currentIndex);
+    }
+});
+
+
+
 // --------------------------------------- Open & Close Navbar Menu -------------------------------------
 const hamburger = document.querySelector(".hamburger")
 
@@ -142,29 +177,28 @@ modal_overlay.addEventListener("click", () => {
     document.body.classList.remove("stopScrolling")
 })
 
-prevBtn.addEventListener('click', () => {
-    if (currentIndex === 0) {
-        currentIndex = 5
-    } else {
-        currentIndex--;
-    }
-    changeImage(currentIndex)
-})
+// prevBtn.addEventListener("click", () => {
+//     if (currentIndex === 0) {
+//         currentIndex = 5
+//     } else {
+//         currentIndex--;
+//     }
+//     changeImage(currentIndex)
+// })
 
-nextBtn.addEventListener('click', () => {
-    if (currentIndex === 5) {
-        currentIndex = 0
-    } else {
-        currentIndex++;
-    }
-    changeImage(currentIndex)
-})
+// nextBtn.addEventListener("click", () => {
+//     if (currentIndex === 5) {
+//         currentIndex = 0
+//     } else {
+//         currentIndex++;
+//     }
+//     changeImage(currentIndex)
+// })
 
 function changeImage(index) {
     images.forEach((img) => img.classList.remove("showImage"))
     images[index].classList.add('showImage')
 }
-
 // ---------------------------------------- Modal Pop Up Animation ---------------------------------------
 const swiper = new Swiper('.swiper', {
     loop: true,
@@ -193,3 +227,5 @@ function activeLink() {
 }
 
 activeLink()
+
+

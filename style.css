@@ -1434,6 +1434,8 @@ footer .social-media {
 
     .hamburger {
         display: block;
+        margin-right: 0;
+        margin-left: auto;
     }
 
     .services img {
@@ -1451,9 +1453,14 @@ footer .social-media {
         transition: 0.3s;
     }
 
+    /*  */
+
     .testimonials {
         height: 565px;
     }
+
+
+    /*  */
 
     header nav {
         justify-content: space-between;
@@ -1777,21 +1784,24 @@ footer .social-media {
         bottom: 30%;
     }
 
-    /* .subscription .square {
-        width: 60px;
-        left: 65%;
-        opacity: 0.8;
-        bottom: -15%;
-    } */
-     /*  */
+}
 
+
+@media (max-width: 560px) and (min-width: 501px) {
+    .swiper {
+        width: 90%;
+        max-width: 600px;
+        margin: 0 auto;
+        height: 250px;
+    }
 }
 
 /* --------------------- 500px екрани ---------------------*/
 
 @media (max-width: 500px) {
     .hamburger {
-        margin-right: 140px;
+        margin-right: 0;
+        margin-left: auto;
     }
 
 
@@ -1922,4 +1932,40 @@ footer .social-media {
         margin-top: 1rem;
     }
 
+
+    /*  */
+    .testimonials {
+        height: 650px;
+    }
+
+    .testimonials-title {
+        padding-left: 0;
+        /* margin-bottom: 1rem; */
+    }
+
+    .swiper {
+        width: 90%;
+        height: 350px;
+        padding: 1.5rem 0;
+    }
+
+    .client img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .client-info h4,
+    .client-info h5 {
+        font-size: 0.9rem;
+    }
+
+    .rvw .text {
+        margin: 1rem 0;
+    }
+
+
+    .swiper-pagination {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }
