@@ -311,6 +311,8 @@ body.open .hamburger .bar:last-child {
     position: relative;
 }
 
+
+
 .showcase-area .container {
     display: grid;
     grid-template-columns: 1fr 550px;
@@ -667,6 +669,7 @@ body.open .hamburger .bar:last-child {
     align-items: center;
     text-align: center;
     justify-items: flex-start;
+    margin-top: 25px;
 }
 
 .milestones h2 {
@@ -977,6 +980,10 @@ body.open .hamburger .bar:last-child {
     padding: var(--section-padding) 0 calc(var(--section-padding)) + 120px;
 }
 
+.tes_img {
+    border-radius: 60px;
+}
+
 .testimonials .container {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -1130,11 +1137,13 @@ body.open .hamburger .bar:last-child {
     column-gap: 4rem;
 }
 
+
 .mail {
     color: var(--main-color-1);
     font-weight: 500;
     font-size: 1.1em;
     transition: 0.3s;
+    margin-top: 95px;
 }
 
 .mail i {
